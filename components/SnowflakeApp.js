@@ -4,7 +4,6 @@ import TrackSelector from '../components/TrackSelector'
 import NightingaleChart from '../components/NightingaleChart'
 import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
-import Wordmark from '../components/Wordmark'
 import LevelThermometer from '../components/LevelThermometer'
 import { eligibleTitles, trackIds, milestones, milestoneToPoints } from '../constants'
 import PointSummaries from '../components/PointSummaries'
@@ -122,6 +121,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
   }
 
   render() {
+
     return (
       <main>
         <style jsx global>{`
@@ -152,8 +152,8 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
           }
         `}</style>
         <div style={{margin: '19px auto 0', width: 142}}>
-          <a href="https://medium.com/" target="_blank">
-            <Wordmark />
+          <a href="https://www.fabamaq.com/" target="_blank">
+            <img src ='./images/FMQ.png' />
           </a>
         </div>
         <div style={{display: 'flex'}}>
