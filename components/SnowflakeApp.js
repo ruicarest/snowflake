@@ -10,7 +10,7 @@ import { eligibleTitles, trackIds, milestones, milestoneToPoints } from '../cons
 import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
-import TitleSelector from '../components/TitleSelector'
+//import TitleSelector from '../components/TitleSelector'
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
@@ -73,8 +73,8 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Cersei Lannister',
-    title: 'Staff Engineer',
+    name: 'Gamers Name',
+    title: 'Company Name',
     milestoneByTrack: {
       'MOBILE': 1,
       'WEB_CLIENT': 2,
@@ -170,10 +170,10 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   onChange={e => this.setState({name: e.target.value})}
                   placeholder="Name"
                   />
-              <TitleSelector
+              {/* <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
-                  setTitleFn={(title) => this.setTitle(title)} />
+                  setTitleFn={(title) => this.setTitle(title)} /> */}
             </form>
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
             <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
