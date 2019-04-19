@@ -50,24 +50,20 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'FOUNDATIONS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INITIATIVE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0,
-      'RECRUITING': 0,
-      'COMMUNITY': 0
+    'HOBBIES': 0,
+    'FELICIDADE': 0,
+    'ESPIRITUALIDADE': 0,
+    'SAUDE': 0,
+    'INTELECT': 0,
+    'EMOTIONAL_BALANCE': 0,
+    'PURPOSE': 0,
+    'FINANCES': 0,
+    'SOCIAL_IMPACT': 0,
+    'FAMILY': 0,
+    'RELATIONSHIP': 0,
+    'SOCIAL_LIFE': 0,
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'HOBBIES'
   }
 }
 
@@ -76,24 +72,24 @@ const defaultState = (): SnowflakeAppState => {
     name: 'Gamers Name',
     title: 'Company Name',
     milestoneByTrack: {
-      'MOBILE': 1,
-      'WEB_CLIENT': 2,
-      'FOUNDATIONS': 3,
-      'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 4,
-      'COMMUNICATION': 1,
-      'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
-      'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
-      'MENTORSHIP': 2,
-      'EVANGELISM': 2,
-      'RECRUITING': 3,
-      'COMMUNITY': 0
+      'HOBBIES': 1,
+      'FELICIDADE': 2,
+      'ESPIRITUALIDADE': 3,
+      'SAUDE': 2,
+      'INTELECT': 4,
+      'EMOTIONAL_BALANCE': 1,
+      'PURPOSE': 1,
+      'FINANCES': 4,
+      'SOCIAL_IMPACT': 3,
+      'FAMILY': 2,
+      'RELATIONSHIP': 0,
+      'SOCIAL_LIFE': 4,
+      // 'MENTORSHIP': 2,
+      // 'EVANGELISM': 2,
+      // 'RECRUITING': 3,
+      // 'COMMUNITY': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'HOBBIES'
   }
 }
 
@@ -249,3 +245,16 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
 }
 
 export default SnowflakeApp
+
+// 'HOBBIES': 1,
+// 'FELICIDADE': 2,
+// 'ESPIRITUALIDADE': 3,
+// 'SAUDE': 2,
+// 'INTELECT': 4,
+// 'EMOTIONAL_BALANCE': 1,
+// 'PURPOSE': 1,
+// 'FINANCES': 4,
+// 'SOCIAL_IMPACT': 3,
+// 'FAMILY': 2,
+// 'RELATIONSHIP': 0,
+// 'SOCIAL_LIFE': 4,
